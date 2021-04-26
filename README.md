@@ -3,7 +3,7 @@ Project Owner: Aaron Au Yoong
 
 ## Table of Contents
 * [Description](#Description)
-* [Licence](#Licence)
+* [License](#License)
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Contributions](#Contributions)
