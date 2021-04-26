@@ -44,67 +44,73 @@ Email: ${answers.email}
 `;
 
 inquirer
-.prompt([
-    {
-        type: 'input',
-        name: 'name',
-        message: 'What is your name?',
-    },
-    {
-        type: 'input',
-        name: 'project',
-        message: 'What is the project name/title?',
-    },
-    {
-        type: 'input',
-        name: 'description',
-        message: 'Please provide a brief description of your project.',
-    },
-    {
-        type: 'input',
-        name: 'installation',
-        message: 'Please walk through the installation instructions and setup of your project.',
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: '',
-    },
-    {
-        type: 'input',
-        name: 'contributions',
-        message: '',
-    },
-    {
-        type: 'input',
-        name: 'tests',
-        message: '',
-    },
-    {
-        type: 'input',
-        name: 'license',
-        message: '',
-    },
-    {
-        type: 'input',
-        name: 'github',
-        message: 'Please enter your GitHub username.',
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'Please enter your email address.',
-    },
-])
+    .prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is your name?',
+        },
+        {
+            type: 'input',
+            name: 'project',
+            message: 'What is the project name/title?',
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Please provide a brief description of your project.',
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Please walk through the installation instructions and setup of your project.',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Please provide instructions and examples for use.',
+        },
+        {
+            type: 'input',
+            name: 'contributions',
+            message: 'What are the guidelines for making contributions?',
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Have you written tests for your application? If so, please provide examples on how to run them here',
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'What license does your project have?',
+            choices: ['MIT', 'GPL', 'Apache']
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Please enter your GitHub username.',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email address.',
+        },
+    ])
+    .then((answers) => {
+        const readmeContent = generateREADME(answers);
+
+        fs.writeFile('README1.md', readmeContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created your readme - readme.md!')
+        );
+    });
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
-}
+// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
