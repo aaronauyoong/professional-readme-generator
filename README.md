@@ -37,6 +37,7 @@ Copyright (c) 2021-Present Aaron Au Yoong. All rights reserved.
 ## Usage
 
 [Video Demo](https://drive.google.com/file/d/1yjqNdqrUGRHgAJPAW9VkibPfx-A15k6H/view?usp=sharing)
+<br>
 For reference, the result of the demo is the file `demoREADME.md`.
 
 
