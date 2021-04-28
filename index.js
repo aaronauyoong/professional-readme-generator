@@ -21,7 +21,7 @@ ${licenseBadge[answers.license]}
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Contributions](#Contributions)
-* [Test](#Test)
+* [Tests](#Tests)
 * [Questions](#Questions)
 
 ## Description
