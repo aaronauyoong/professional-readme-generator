@@ -10,7 +10,7 @@ Project Owner: Aaron Au Yoong
 * [Usage](#Usage)
 * [Contributions](#Contributions)
 * [Credits](#Credits)
-* [Test](#Test)
+* [Tests](#Tests)
 * [Questions](#Questions)
 
 
@@ -28,7 +28,7 @@ The professional README's Questions section will contain the user input's GitHub
 
 ## License 
 MIT License
-Copyright (c) 2021 Aaron Au Yoong
+Copyright (c) 2021-Present Aaron Au Yoong. All rights reserved.
 ## Installation
 1. Download the `professional-readme-generator` into your local device. 
 2. Install npm basic packages. 
@@ -36,7 +36,9 @@ Copyright (c) 2021 Aaron Au Yoong
 
 ## Usage
 
-Video Demonstration: 
+[Video Demo](https://drive.google.com/file/d/1yjqNdqrUGRHgAJPAW9VkibPfx-A15k6H/view?usp=sharing)
+For reference, the result of the demo is the file `demoREADME.md`.
+
 
 1. Ensure you have all the files from `professional-readme-generator` downloaded into your system.
 
@@ -62,7 +64,7 @@ node index.js
 
 4. Answer the questions that appear. 
 
-5. Upon completion, the readme will be generated in your local folder `professional-readme-generator`. 
+5. Upon completion, the readme will be generated as `newREADME.md` in your local folder `professional-readme-generator`. 
 
 6. Success! You may now use the generated readme for your project.
 
