@@ -1,15 +1,17 @@
+// Packages required for application to run
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const generateMarkdown = require('./utils/generateMarkdown');
 
 const generateREADME = (answers) => {
 
+    // License badge options
     const licenseBadge = {
     "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)",
     "GNU GPLv3": "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)",
     "Apache License 2.0": "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://choosealicense.com/licenses/apache-2.0/)",
     }
 
+// Returns answers in the following format
 return `# ${answers.project}
 Project Owner: ${answers.name}
 
@@ -50,6 +52,7 @@ For any further enquiries, please do not hesitate to contact me via my:
 `;
 }
 
+// Questions to ask user. Inquirer package used to collect data.
 inquirer
     .prompt([
         {
