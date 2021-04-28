@@ -1,14 +1,19 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
+// const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
-// const questions = [];
+const generateREADME = (answers) => {
 
-const generateREADME = (answers) => 
-`# ${answers.project}
+    const licenseBadge = {
+    "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)",
+    "GNU GPLv3": "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)",
+    "Apache License 2.0": "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://choosealicense.com/licenses/apache-2.0/)",
+    }
+
+return `# ${answers.project}
 Project Owner: ${answers.name}
+
+${licenseBadge[answers.license]}
 
 ## Table of Contents
 * [Description](#Description)
@@ -38,10 +43,12 @@ ${answers.contributions}
 ${answers.tests}
 
 ## Questions
-GitHub Profile: github.com/${answers.github}
-Email: ${answers.email}
+For any further enquiries, please do not hesitate to contact me via my:
+1) GitHub Profile: github.com/${answers.github}
+2) Email: ${answers.email}
 
 `;
+}
 
 inquirer
     .prompt([
@@ -84,7 +91,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'What license does your project have?',
-            choices: ['MIT', 'GPL', 'Apache']
+            choices: ['MIT', 'GNU GPLv3', 'Apache License 2.0']
         },
         {
             type: 'input',
@@ -98,19 +105,9 @@ inquirer
         },
     ])
     .then((answers) => {
-        const readmeContent = generateREADME(answers);
+        const readMEContent = generateREADME(answers);
 
-        fs.writeFile('README1.md', readmeContent, (err) =>
-        err ? console.log(err) : console.log('Successfully created your readme - readme.md!')
+        fs.writeFile('newREADME.md', readMEContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created your README - newREADME.md!')
         );
     });
-
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init();
