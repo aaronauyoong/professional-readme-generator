@@ -9,6 +9,7 @@ Project Owner: Aaron Au Yoong
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Contributions](#Contributions)
+* [Credits](#Credits)
 * [Test](#Test)
 * [Questions](#Questions)
 
@@ -67,6 +68,9 @@ node index.js
 
 ## Contributions
 For contributions, you may follow the industry standard: [Contributor Covenant](https://www.contributor-covenant.org/)
+
+## Credits
+License badges used in this project were retrieved from GitHub user's `lukas-h` license-badge markdown file: [Markdown License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 ## Tests
 n/a
 ## Questions 
