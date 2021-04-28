@@ -15,7 +15,7 @@ Project Owner: Aaron Au Yoong
 
 
 ## Description
-This is a command-line interface application that dynamically generates a professional README.md file from a user's input through using the inquirer npm package. The application will be invoked by using the following command:
+This is a command-line interface application that dynamically generates a professional `README.md` file from a user's input through using the inquirer npm package. The application will be invoked by using the following command:
 
 ```bash
 node index.js
@@ -36,7 +36,7 @@ Copyright (c) 2021-Present Aaron Au Yoong. All rights reserved.
 
 ## Usage
 
-[Video Demo](https://drive.google.com/file/d/1yjqNdqrUGRHgAJPAW9VkibPfx-A15k6H/view?usp=sharing)
+[Video Demo](https://youtu.be/Xw_mc-CcbFU)
 <br>
 For reference, the result of the demo is the file `demoREADME.md`.
 
